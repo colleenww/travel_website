@@ -9,9 +9,6 @@
 	--color-teal: #9FC2BB;
 	--color-orange: #F5A46C;
 }
-
-/*
-box sizing and overflow hidden*/
 .header{
 	position: relative;
 	overflow: hidden;
@@ -42,7 +39,6 @@ box sizing and overflow hidden*/
 			padding-bottom: 20%;
 		}
 }
-
 @keyframes fadein{
 	0%{
 		opacity: 0;
@@ -158,9 +154,10 @@ h1{
   and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 		.about{
-			margin-left: 20%;
+			margin-left: 25%;
 			margin-right: -30%;
 		}
+	}
 .about_us{
 	/* margin-left: 8rem; */
 	padding-bottom: 3rem;
@@ -222,9 +219,9 @@ h1{
 	opacity: 0;
 }
 .about_us-text{
+	padding-top: 20%;
 	padding-left: 3rem;
 }
-
 .about-sub{
 	text-transform: uppercase;
 	font-family: 'Special Elite';
@@ -262,7 +259,7 @@ h1{
   and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 		.paragraph{
-			font-size: 20rem;
+			font-size: 6rem;
 		}
 	}
 @media only screen and (max-width: 1250px){
@@ -300,6 +297,7 @@ h1{
 		.anoveltyexp-text{
 			display: none;
 		}
+	}
 .anoveltyexp-picture{
 	position: relative;
 	display: block;
@@ -328,6 +326,7 @@ h1{
 		.bridge_overlay{
 			opacity: 1;
 		}
+	}
 .anoveltyexp-picture:hover .bridge_overlay{
   	opacity: 1;
 }
@@ -345,6 +344,17 @@ h1{
 	padding-right: 0.4rem;
 	font-size: 1.25rem;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.bridge_overlay-text{
+			font-size: 6rem;
+		}
+		.bridge_overlay-text_sub{
+			font-size: 2.5rem;
+		}
+	}
 .button_continue{
 	text-align: center;
 	margin-left: -25rem;
@@ -361,6 +371,14 @@ h1{
 	font-size: 5rem;
 	width: 100%;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.book-sub_ontop{
+			top: 310%;
+		}
+		}
 .h2{
 	position: absolute;
 	top: 0;
@@ -371,6 +389,7 @@ h1{
 	letter-spacing: 1rem;
 	font-weight: bold;
 }
+
 /* .-book-sub_step{
 	text-decoration-line: underline;
 	text-decoration-color: var(--color-navyblue);
