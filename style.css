@@ -24,6 +24,11 @@ box sizing and overflow hidden*/
 	animation-name: fadein;
 	animation-duration: 3s;
 }
+@media only screen and (max-width: 600px){
+	.header{
+		width: 100%;
+	}
+}
 @keyframes fadein{
 	0%{
 		opacity: 0;
