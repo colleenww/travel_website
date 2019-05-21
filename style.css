@@ -568,9 +568,9 @@ h2{
   and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 		.borough-cards{
-			top: 470%;
-			left: -15%;
-			height: 100%;
+			top: 475%;
+			left: -1%;
+			height: 100vh;
 			transform: scale(3);
 		}
 	}
@@ -725,6 +725,7 @@ a{
 		.card_5:hover .card-back{
 			margin-top: 20%;
 		}
+	}
 .borough-cards:hover .card-front:not(:hover){
 	opacity: 0.5;
 }
@@ -739,8 +740,8 @@ a{
   and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 		.activities-header{
-			margin-top: 670%;
-			margin-left: 10%;
+			margin-top: 660%;
+			
 		}
 	}
 .videos{
