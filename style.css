@@ -36,7 +36,7 @@
 			background-repeat: none;
 			margin-top: -20%;
 			margin-right: -55%;
-			padding-bottom: 20%;
+			padding-bottom: 40%;
 		}
 }
 @keyframes fadein{
@@ -259,7 +259,7 @@ h1{
   and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 		.paragraph{
-			font-size: 6rem;
+			font-size: 4.5rem;
 		}
 	}
 @media only screen and (max-width: 1250px){
@@ -350,6 +350,7 @@ h1{
   and (-webkit-min-device-pixel-ratio: 2) {
 		.bridge_overlay-text{
 			font-size: 6rem;
+			padding-bottom: -20%;
 		}
 		.bridge_overlay-text_sub{
 			font-size: 2.5rem;
@@ -377,8 +378,10 @@ h1{
   and (-webkit-min-device-pixel-ratio: 2) {
 		.book-sub_ontop{
 			top: 310%;
+			left: 30%;
+			z-index: 100;
 		}
-		}
+	}
 .h2{
 	position: absolute;
 	top: 0;
@@ -389,12 +392,6 @@ h1{
 	letter-spacing: 1rem;
 	font-weight: bold;
 }
-
-/* .-book-sub_step{
-	text-decoration-line: underline;
-	text-decoration-color: var(--color-navyblue);
-	transition: 0.2s ease;
-} */
 @media only screen and (max-width: 1212px){
 	.book-sub_ontop{
 		display: block;
@@ -411,6 +408,16 @@ h1{
 	height: 120vh;
 	/* box-shadow: 0 0 0.5rem 0.5rem white inset; */
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.book-header{
+		background-image: url(img/bookatrip/mapphone.jpg);
+		margin-top: -30%;
+		margin-left: 20%;
+	}
+		}
 @media only screen and (max-width: 1212px){
 	.book-header{
 		margin-top: 30%;
@@ -421,6 +428,7 @@ h1{
 		display: none;
 	}
 }
+
 .-book-sub{
 	display: none;
 	position: absolute;
@@ -434,6 +442,16 @@ h1{
 	text-decoration-color: var(--color-navyblue);
 	transition: 0.2s ease;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.-book-sub{
+			margin-top: 20%;
+			left: -50%;
+			font-size: 8rem;
+		}
+	}
 .-book-sub_step:hover{
 	transform: scale(1.2);
 }
@@ -471,13 +489,23 @@ h2{
 .book-sub_step:hover{
 	transform: scale(1.2);
 }
-
 .borough-label{
 	position: absolute;
 	font-family: 'Special Elite';
 	font-size: 2.5rem;
 	font-weight: bold;
 	transition: 0.2s ease;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.borough-label{
+		display: none
+	}
+	.maplabeled{
+		display: block;
+	}
 }
 .borough-label:hover{
 	transform: scale(1.5);
@@ -535,6 +563,16 @@ h2{
 	align-items: center;
 	height: 100%;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.borough-cards{
+			top: 470%;
+			left: -15%;
+			height: 100%;
+			transform: scale(3);
+		}
 @media only screen and (max-width: 1212px){
 	.borough-cards{
 		margin-top: 33%;
@@ -620,6 +658,16 @@ a{
 	transform: rotateY(-180deg);
 	transition: all 1s;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.card-back{
+			transform: rotateY(0deg);
+			z-index: 2;
+			transform: scale(1.1);
+		}
+	}
 .neighborhood-pic{
 	width: 26rem;
 }
@@ -669,6 +717,13 @@ a{
 	z-index: 2;
 	transform: scale(1.1);
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.card_5:hover .card-back{
+			margin-top: 20%;
+		}
 .borough-cards:hover .card-front:not(:hover){
 	opacity: 0.5;
 }
@@ -678,6 +733,15 @@ a{
 	font-family: 'Montserrat';
 	font-size: 10rem;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.activities-header{
+			margin-top: 670%;
+			margin-left: 10%;
+		}
+	}
 .videos{
 	position: relative;
 	margin-bottom: 50rem;
