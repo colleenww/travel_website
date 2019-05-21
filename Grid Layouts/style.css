@@ -1,0 +1,63 @@
+:root{
+	--grid-width:114rem;
+	--gutter-vertical: 0rem;
+	--gutter-horizontal: 6rem;
+	--color-primary:(201,91,90);
+	--color-primary-light:(13,255,161); 
+	--color-primary-dark:(238,173,93);
+	--color-secondary:#60859fS;
+}
+html{
+	font-size: 10px;
+}
+*,*::afar,*::before{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.row{
+	background-color: var(--color-secondary);
+	max-width: 114rem;
+	margin: 0 auto;
+
+}
+.row:not(:last-child){
+	margin-bottom: 6rem;
+}
+[class^="col-"]{
+	float: left;
+	background-color: var(--color-primary-dark);
+}
+[class^="col-"]:not(:last-child){
+	margin-right: 6rem
+}
+.col-1-of-2{
+	width: calc((100% - var(--gutter-horizontal))/2);
+}
+.col-1-of-3{
+	width: calc((100% - var(--gutter-horizontal) * 2)/3);
+}
+.col-2-of-3{
+	width: calc((100% - var(--gutter-horizontal) * 2)/3 * 2 + 6rem);
+}
+.col-1-of-4{
+	width: calc((100% - var(--gutter-horizontal) * 3)/4);
+}
+.col-2-of-4{
+	width: calc((100% - var(--gutter-horizontal) * 3)/2 + 6rem);
+}
+@media only screen and (max-width: 900px){
+	.col-2-of-4{
+		width: 100%;
+	}
+}
+.col-3-of-4{
+	width: calc((100% - var(--gutter-horizontal))/1.5 + 12rem);
+}
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
