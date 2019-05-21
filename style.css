@@ -573,6 +573,7 @@ h2{
 			height: 100%;
 			transform: scale(3);
 		}
+	}
 @media only screen and (max-width: 1212px){
 	.borough-cards{
 		margin-top: 33%;
