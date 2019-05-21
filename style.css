@@ -26,7 +26,7 @@ box sizing and overflow hidden*/
 }
 @media only screen and (max-width: 600px){
 	.header{
-		width: 100%;
+		display: none;
 	}
 }
 @keyframes fadein{
