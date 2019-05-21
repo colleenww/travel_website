@@ -24,12 +24,21 @@ box sizing and overflow hidden*/
 	animation-name: fadein;
 	animation-duration: 3s;
 }
+@media only screen and (max-width: 1024px){
+	.header{
+		margin-right: -10%;
+	}
+}
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 		.header{
-			display: none;
+			-webkit-clip-path: none;
+			/* background-size: 150% 50%; */
+			background-repeat: none;
+			margin-top: -20%;
+			margin-right: -35%;
 		}
 }
 
@@ -51,6 +60,15 @@ h1{
 	letter-spacing: 1rem;
 	color: white;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		h1{
+			margin-top: 40%;
+			font-size: 5rem;
+		}
+	}
 .header-sub{
 	line-height: 100%;
 	filter: drop-shadow(0 0 2rem #000);
@@ -60,6 +78,14 @@ h1{
 	animation-name: shrink_in;
 	animation-duration: 3s;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.header-sub{
+			font-size: 30rem;
+		}
+	}
 @keyframes shrink_in{
 	0%{
 		transform:scale(3);
