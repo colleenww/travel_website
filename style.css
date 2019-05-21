@@ -276,6 +276,35 @@ h1{
 	font-family: 'Roboto Slab';
 	font-size: 2rem;
 }
+.book-sub_ontop{
+	display: none;
+	position: absolute;
+	top: 320%;
+	left: 2%;
+	font-family: 'Montserrat';
+	font-size: 5rem;
+	width: 100%;
+}
+.h2{
+	position: absolute;
+	top: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15rem;
+	font-family: 'Amatic SC';
+	letter-spacing: 1rem;
+	font-weight: bold;
+}
+/* .-book-sub_step{
+	text-decoration-line: underline;
+	text-decoration-color: var(--color-navyblue);
+	transition: 0.2s ease;
+} */
+@media only screen and (max-width: 1212px){
+	.book-sub_ontop{
+		display: block;
+	}
+}
 .book-header{
 	position: relative;
 	margin-top: 10%;
@@ -286,6 +315,37 @@ h1{
 	background-repeat: no-repeat;
 	height: 120vh;
 	/* box-shadow: 0 0 0.5rem 0.5rem white inset; */
+}
+@media only screen and (max-width: 1212px){
+	.book-header{
+		margin-top: 30%;
+		transform: scale(0.8);
+		background-position: left;
+	}
+	h2{
+		display: none;
+	}
+}
+.-book-sub{
+	display: none;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 55%;
+	font-family: 'Montserrat';
+	font-size: 5rem;
+}
+.-book-sub_step{
+	text-decoration-line: underline;
+	text-decoration-color: var(--color-navyblue);
+	transition: 0.2s ease;
+}
+.-book-sub_step:hover{
+	transform: scale(1.2);
+}
+@media only screen and (max-width: 1212px){
+	.-book-sub{
+		display: block;
+	}
 }
 h2{
 	position: absolute;
@@ -302,6 +362,11 @@ h2{
 	left: 4%;
 	font-family: 'Montserrat';
 	font-size: 5rem;
+}
+@media only screen and (max-width: 1212px){
+	.book-sub{
+		display: none;
+	}
 }
 .book-sub_step{
 	text-decoration-line: underline;
@@ -348,6 +413,23 @@ h2{
 	left: 26%;
 	transform: rotate(-45deg);
 }
+@media only screen and (max-width: 1212px){
+	.bronx{
+		right: 52%;
+	}
+	.manhattan{
+		left: 27.5%;
+	}
+	.queens{
+		right: 45%;
+	}
+	.brooklyn{
+		left: 30%;
+	}
+	.staten_island{
+		left: 5%;
+	}
+}
 .borough-cards{
 	position: absolute;
 	top: 295%;
@@ -357,6 +439,16 @@ h2{
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
+}
+@media only screen and (max-width: 1212px){
+	.borough-cards{
+		margin-top: 33%;
+	}
+}
+@media only screen and (max-width: 1212px){
+	.borough-cards{
+		right: 32%;
+	}
 }
 a{
 	color: black;
