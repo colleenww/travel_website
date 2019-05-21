@@ -741,7 +741,7 @@ a{
   and (-webkit-min-device-pixel-ratio: 2) {
 		.activities-header{
 			margin-top: 660%;
-			
+			margin-right: -35%;
 		}
 	}
 .videos{
@@ -750,6 +750,15 @@ a{
 	display: flex;
 	justify-content: center;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.videos{
+			margin-left: 20%;
+			margin-right: -35%;
+		}
+	}
 ::-webkit-media-controls {
   display:none !important;
 }
@@ -794,6 +803,16 @@ a{
 	font-size: 3.5rem;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.night_dropdown-content{
+			transform: translateX(40%) scale(2);
+			margin-top: 20%;
+			z-index: 100;
+		}
+	}
 .dropdown:hover .night_dropdown-content{
   display: block;
 }
@@ -809,11 +828,19 @@ a{
 	font-size: 3.5rem;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.day_dropdown-content{
+			transform: translateX(-40%) scale(2);
+			margin-top: 20%;
+			z-index: 100;
+		}
+	}
 .dropdown:hover .day_dropdown-content{
 	display: block;
 }
-
-
 .nav-checkbox{
 	display: none;
 }
@@ -844,6 +871,14 @@ a{
     background-color: #B6B6B6;
 	box-shadow: 0px 0px 2.5rem;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.icon-shadow{
+			display: none;
+		}
+	}
 .nav-icon:hover~.icon-shadow{
 	transform: scale(1.2);
 }
@@ -892,7 +927,6 @@ a{
 	text-decoration: none;
 	transition-duration: .4s;
 }
-
 .nav-link:hover{
 	transform: scale(1.3);
 }
