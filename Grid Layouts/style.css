@@ -52,6 +52,14 @@ html{
 		width: 100%;
 	}
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	  .col-2-of-4{
+		  width: 100%
+	  }
+	}
 .col-3-of-4{
 	width: calc((100% - var(--gutter-horizontal))/1.5 + 12rem);
 }

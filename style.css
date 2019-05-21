@@ -39,6 +39,7 @@ box sizing and overflow hidden*/
 			background-repeat: none;
 			margin-top: -20%;
 			margin-right: -55%;
+			padding-bottom: 20%;
 		}
 }
 
@@ -152,7 +153,14 @@ h1{
 		margin-right: 10%;
 	}
 }
-
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.about{
+			margin-left: 20%;
+			margin-right: -30%;
+		}
 .about_us{
 	/* margin-left: 8rem; */
 	padding-bottom: 3rem;
@@ -178,7 +186,14 @@ h1{
 		display: none;
 	}
 }
-
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.about_us-picture{
+			display: none;
+		}
+	}
 .sheldon_overlay{
 	position: absolute;
 	top: 84%;
@@ -209,14 +224,7 @@ h1{
 .about_us-text{
 	padding-left: 3rem;
 }
-/* @media only screen and (max-width: 900px){
-	.col-2-of-4{
-		display: none;
-	}
-	.about_us-text{
-		display: block;
-	}
-} */
+
 .about-sub{
 	text-transform: uppercase;
 	font-family: 'Special Elite';
@@ -228,6 +236,17 @@ h1{
 		font-size: 4.8rem;
 	}
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.about-sub{
+			font-size: 16rem;
+			text-decoration-line: underline;
+			text-decoration-color: var(--color-red);
+			transform: scale(1.1);
+		}
+	}
 .about-sub:hover{
 	text-decoration-line: underline;
 	text-decoration-color: var(--color-red);
@@ -238,6 +257,14 @@ h1{
 	font-family: 'Dosis';
 	font-size: 2rem;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.paragraph{
+			font-size: 20rem;
+		}
+	}
 @media only screen and (max-width: 1250px){
 	.paragraph{
 		font-size: 1.9rem;
@@ -266,6 +293,13 @@ h1{
 		margin-left: 7%;
 	}
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.anoveltyexp-text{
+			display: none;
+		}
 .anoveltyexp-picture{
 	position: relative;
 	display: block;
@@ -287,6 +321,13 @@ h1{
 		opacity: 1;
 	}
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.bridge_overlay{
+			opacity: 1;
+		}
 .anoveltyexp-picture:hover .bridge_overlay{
   	opacity: 1;
 }
